@@ -71,7 +71,7 @@ function addStar() {
 
 // create array of 200 values and for each value call addStar f()
 Array(200).fill().forEach(addStar);
-const spaceTextureBackground = new THREE.TextureLoader().load('images/space.jpeg');
+const spaceTextureBackground = new THREE.TextureLoader().load('space.jpeg');
 scene.background = spaceTextureBackground;
 
 
@@ -79,7 +79,7 @@ scene.background = spaceTextureBackground;
 
 // Avatar
 // texture loader - loads an image
-const jeffTexture = new THREE.TextureLoader().load('images/igor.jpeg');
+const jeffTexture = new THREE.TextureLoader().load('igor.jpeg');
 const jeff = new THREE.Mesh(
     new THREE.BoxGeometry(3, 3, 3),
     new THREE.MeshBasicMaterial({map: jeffTexture})
@@ -88,8 +88,8 @@ const jeff = new THREE.Mesh(
 scene.add(jeff);
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('images/moon.jpeg');
-const normalTexture = new THREE.TextureLoader().load('images/normal.jpeg');
+const moonTexture = new THREE.TextureLoader().load('moon.jpeg');
+const normalTexture = new THREE.TextureLoader().load('normal.jpeg');
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
